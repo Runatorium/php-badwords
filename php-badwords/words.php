@@ -3,8 +3,14 @@ $phrase = $_GET['phrase'];
 $word = $_GET['wordToCensor'];
 
 
+
 $frase = explode(' ', $phrase, );
 $length = sizeof($frase);
+
+echo 'La Lunghezza del Paragrafo è di ' . $length . ' parole : ' . $phrase;
+echo "<br>";
+echo "<br>";
+echo ' La Lunghezza del Paragrafo è di ' . $length . ' parole : ';
 
 
 for ($i = 0; $i <= $length - 1; $i++) {
@@ -15,6 +21,8 @@ for ($i = 0; $i <= $length - 1; $i++) {
 
     echo $frase[$i] . ' ';
 }
+
+
 
 ?>
 
@@ -29,7 +37,7 @@ for ($i = 0; $i <= $length - 1; $i++) {
 </head>
 
 <body>
-    <h1>
+    <h1 style="display:inline-block;">
         <?php $frase; ?>
     </h1>
 </body>
